@@ -1,0 +1,61 @@
+<form class="form" [formGroup]="formulario">
+    <fieldset>
+        <table>
+            <tr>
+                <td>
+                    <mat-form-field class="input-first-line" appearance="fill">
+                        <mat-label>Nome completo</mat-label>
+                        <input matInput formControlName="name">
+                        <mat-hint>Preencha com seu nome completo</mat-hint>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="input-first-line" appearance="fill">
+                        <mat-label>Profissão</mat-label>
+                        <input matInput formControlName="occupation">
+                        <mat-hint>Preencha com a sua profissão</mat-hint>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="input-first-line" appearance="fill">
+                        <mat-label>CPF</mat-label>
+                        <input matInput formControlName="CPF">
+                        <mat-hint>Preencha com o seu CPF</mat-hint>
+                    </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <mat-form-field class="input-second-line" appearance="fill">
+                        <mat-label>E-mail</mat-label>
+                        <input matInput formControlName="email">
+                        <mat-hint>Preencha com um e-mail válido</mat-hint>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="input-second-line" appearance="fill">
+                        <mat-label>Data de nascimento</mat-label>
+                        <input matInput formControlName="dateOfBirth">
+                        <mat-hint>Preencha com sua data de nascimento</mat-hint>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="input-second-line" appearance="fill">
+                        <mat-label>CEP</mat-label>
+                        <input matInput formControlName="CEP">
+                        <mat-hint>O CEP deve ter 9 dígitos</mat-hint>
+                    </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Celular</mat-label>
+                        <input matInput formControlName="telephone">
+                        <mat-hint>Preencha com seu celular</mat-hint>
+                    </mat-form-field>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
