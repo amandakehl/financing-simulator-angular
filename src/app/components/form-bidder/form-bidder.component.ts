@@ -7,7 +7,7 @@ import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms'
   styleUrls: ['./form-bidder.component.scss']
 })
 export class FormBidderComponent implements OnInit {
-  formulario!: FormGroup;
+  formularioBidder!: FormGroup;
 
   constructor(
     private formBuilder: FormBuilder
@@ -24,7 +24,7 @@ export class FormBidderComponent implements OnInit {
     //   telephone: new FormControl(null)
     // });
 
-    this.formulario = this.formBuilder.group({
+    this.formularioBidder = this.formBuilder.group({
       name: [null],
       occupation: [null],
       CPF: [null],
