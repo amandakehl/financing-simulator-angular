@@ -1,13 +1,6 @@
-.all-information {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.image-logo {
-    position: absolute;
-    left: 65%;
-    top: 55%;
+.container {
+    width: 100vw;
+    height: 135vh;
 }
 
 .title {
@@ -18,7 +11,7 @@
     top: 86px;
 }
 
-.information {
+.approved {
     position: absolute;
     left: 0%;
     right: 0%;

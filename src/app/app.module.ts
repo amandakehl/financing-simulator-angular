@@ -18,6 +18,10 @@ import { FormResidenceComponent } from './components/form-residence/form-residen
 import { FirstInformationComponent } from './components/first-information/first-information.component';
 import { ImageSoVamuComponent } from './components/image-so-vamu/image-so-vamu.component';
 import { ResidenceDataComponent } from './pages/residence-data/residence-data.component';
+import { ApprovedPropositionComponent } from './components/approved-proposition/approved-proposition.component';
+import { ApprovedPageComponent } from './pages/approved-page/approved-page.component';
+import { ReprovedPropositionComponent } from './components/reproved-proposition/reproved-proposition.component';
+import { ReprovedPageComponent } from './pages/reproved-page/reproved-page.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { ResidenceDataComponent } from './pages/residence-data/residence-data.co
     FormResidenceComponent,
     FirstInformationComponent,
     ImageSoVamuComponent,
-    ResidenceDataComponent
+    ResidenceDataComponent,
+    ApprovedPropositionComponent,
+    ApprovedPageComponent,
+    ReprovedPropositionComponent,
+    ReprovedPageComponent
   ],
   imports: [
     BrowserModule,
