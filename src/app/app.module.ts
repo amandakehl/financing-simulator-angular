@@ -17,6 +17,7 @@ import { FormBidderComponent } from './components/form-bidder/form-bidder.compon
 import { FormResidenceComponent } from './components/form-residence/form-residence.component';
 import { FirstInformationComponent } from './components/first-information/first-information.component';
 import { ImageSoVamuComponent } from './components/image-so-vamu/image-so-vamu.component';
+import { ResidenceDataComponent } from './pages/residence-data/residence-data.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ImageSoVamuComponent } from './components/image-so-vamu/image-so-vamu.c
     FormBidderComponent,
     FormResidenceComponent,
     FirstInformationComponent,
-    ImageSoVamuComponent
+    ImageSoVamuComponent,
+    ResidenceDataComponent
   ],
   imports: [
     BrowserModule,
