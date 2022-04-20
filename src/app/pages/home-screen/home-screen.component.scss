@@ -20,8 +20,18 @@
 
 .information {
     position: absolute;
-    left: 0%;
-    right: 0%;
     top: 126px;
-    bottom: 0%;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1124px) {
+    .all-information {
+        display: flex;
+    }
+
+    .image-logo {
+        display: none;
+        left: 20px;
+    }
 }
