@@ -1,19 +1,32 @@
-fieldset {
+.form-fielset {
     border-style: hidden;
     background: var(--white);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     margin: 10px;
+    padding: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
-table {
-    margin: 17px;
-}
-
-.input-first-line {
+mat-form-field {
     margin: 0 30px 20px 0;
 }
 
-.input-second-line {
-    margin: 0 30px 20px 0;
+::ng-deep mat-form-field {
+    width: 440px !important;
+}
+
+.form-fielset::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid var(--gray);
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 1124px) {
+    .form {
+        width: 100%;
+    }
 }

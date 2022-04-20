@@ -1,48 +1,38 @@
 <form class="form" [formGroup]="formularioResidence">
-    <fieldset>
-        <table>
-            <tr>
-                <td>
-                    <mat-form-field appearance="fill">
-                        <mat-label>Tipo do imóvel</mat-label>
-                        <mat-select name="residence">
-                            <mat-option *ngFor="let residence of residences" [value]="residence.value">
-                                {{residence.viewValue}}
-                            </mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                </td>
-                <td>
-                    <mat-form-field class="input-first-line" appearance="fill">
-                        <mat-label>Renda mensal</mat-label>
-                        <input matInput formControlName="monthlyIncome">
-                        <mat-hint>Preencha com a sua renda mensal</mat-hint>
-                    </mat-form-field>
-                </td>
-                <td>
-                    <mat-form-field class="input-first-line" appearance="fill">
-                        <mat-label>Valor do imóvel</mat-label>
-                        <input matInput formControlName="residenceValue">
-                        <mat-hint>Preencha com o valor do imóvel desejado</mat-hint>
-                    </mat-form-field>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <mat-form-field class="input-second-line" appearance="fill">
-                        <mat-label>Valor da entrada</mat-label>
-                        <input matInput formControlName="entryValue">
-                        <mat-hint>Preencha com no mínimo 20% do valor do imóvel</mat-hint>
-                    </mat-form-field>
-                </td>
-                <td>
-                    <mat-form-field class="input-second-line" appearance="fill">
-                        <mat-label>Em quantas parcelas deseja parcelar?</mat-label>
-                        <input matInput formControlName="installments">
-                        <mat-hint>Preencha com no máximo 360 parcelas</mat-hint>
-                    </mat-form-field>
-                </td>
-            </tr>
-        </table>
+    <fieldset class="form-fielset">
+
+        <mat-form-field appearance="fill">
+            <mat-label>Tipo do imóvel</mat-label>
+            <mat-select name="residence">
+                <mat-option *ngFor="let residence of residences" [value]="residence.value">
+                    {{residence.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="input-first-line" appearance="fill">
+            <mat-label>Renda mensal</mat-label>
+            <input matInput formControlName="monthlyIncome">
+            <mat-hint>Preencha com a sua renda mensal</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field class="input-first-line" appearance="fill">
+            <mat-label>Valor do imóvel</mat-label>
+            <input matInput formControlName="residenceValue">
+            <mat-hint>Preencha com o valor do imóvel desejado</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field class="input-second-line" appearance="fill">
+            <mat-label>Valor da entrada</mat-label>
+            <input matInput formControlName="entryValue">
+            <mat-hint>Preencha com no mínimo 20% do valor do imóvel</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field class="input-second-line" appearance="fill">
+            <mat-label>Em quantas parcelas deseja parcelar?</mat-label>
+            <input matInput formControlName="installments">
+            <mat-hint>Preencha com no máximo 360 parcelas</mat-hint>
+        </mat-form-field>
+
     </fieldset>
 </form>
