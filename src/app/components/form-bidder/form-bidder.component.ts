@@ -14,24 +14,14 @@ export class FormBidderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // this.formulario = new FormGroup({
-    //   name: new FormControl(null),
-    //   occupation: new FormControl(null),
-    //   CPF: new FormControl(null),
-    //   email: new FormControl(null),
-    //   dateOfBirth: new FormControl(null),
-    //   CEP: new FormControl(null),
-    //   telephone: new FormControl(null)
-    // });
-
     this.formularioBidder = this.formBuilder.group({
-      name: [null],
-      occupation: [null],
-      CPF: [null],
-      email: [null],
-      dateOfBirth: [null],
-      CEP: [null],
-      telephone: [null]
+      name: [null, [Validators.minLength(3), Validators.required]],
+      occupation: [null, Validators.required],
+      CPF: [null, Validators.required],
+      email: [null, [Validators.email, Validators.required]],
+      dateOfBirth: [null, Validators.required],
+      CEP: [null, Validators.required],
+      telephone: [null, Validators.required]
     })
   }
 

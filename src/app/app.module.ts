@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +23,9 @@ import { ApprovedPropositionComponent } from './components/approved-proposition/
 import { ApprovedPageComponent } from './pages/approved-page/approved-page.component';
 import { ReprovedPropositionComponent } from './components/reproved-proposition/reproved-proposition.component';
 import { ReprovedPageComponent } from './pages/reproved-page/reproved-page.component';
+import { CpfPipe } from './pipes/cpf.pipe';
+import { TelephonePipe } from './pipes/telephone.pipe';
+import { ButtonStartComponent } from './components/button-start/button-start.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +42,10 @@ import { ReprovedPageComponent } from './pages/reproved-page/reproved-page.compo
     ApprovedPropositionComponent,
     ApprovedPageComponent,
     ReprovedPropositionComponent,
-    ReprovedPageComponent
+    ReprovedPageComponent,
+    CpfPipe,
+    TelephonePipe,
+    ButtonStartComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +54,8 @@ import { ReprovedPageComponent } from './pages/reproved-page/reproved-page.compo
     MatToolbarModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatSelectModule
+    MatSelectModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
