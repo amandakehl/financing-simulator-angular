@@ -1,74 +1,63 @@
-.proposition-count {
-    position: absolute;
-    width: 1408px;
-    height: 44px;
-    left: 16px;
-    top: 142px;
+.container {
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 2px var(--gray);
+    border-radius: 4px;
+    margin: 16px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    line-height: 10px;
+}
 
+.proposition-count {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
-    line-height: 24px;
+    line-height: 50px;
     text-align: center;
     letter-spacing: 0.15px;
     color: var(--black);
+    margin: 10px;
 }
 
 .reproved-image {
-    position: absolute;
-    width: 103px;
-    height: 97px;
-    left: 668px;
-    top: 246px;
+    margin: 10px;
 }
 
 .reproved {
-    position: absolute;
-    width: 1408px;
-    height: 35px;
-    left: 16px;
-    top: 375px;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
-    line-height: 24px;
+    line-height: 40px;
     text-align: center;
     letter-spacing: 0.15px;
     color: var(--red);
+    margin: 10px;
 }
 
 .unfortunately-message {
-    position: absolute;
-    width: 1407px;
-    height: 72px;
-    left: 16px;
-    top: 472px;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 24px;
+    line-height: 32px;
     text-align: center;
     letter-spacing: 0.15px;
     color: var(--black);
+    margin: 10px;
 }
 
 .list-reproved {
-    position: absolute;
-    width: 1407px;
-    height: 264px;
-    left: 17px;
-    top: 570px;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 40px;
+    line-height: 35px;
     text-align: center;
     letter-spacing: 0.15px;
     color: var(--black);

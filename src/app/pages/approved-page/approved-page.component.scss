@@ -1,6 +1,7 @@
 .container {
+    background-color: var(--gray);
     width: 100vw;
-    height: 135vh;
+    height: 100%;
 }
 
 .title {
@@ -12,9 +13,9 @@
 }
 
 .approved {
-    position: absolute;
+    position: relative;
     left: 0%;
     right: 0%;
-    top: 126px;
+    top: 63px;
     bottom: 0%;
 }
