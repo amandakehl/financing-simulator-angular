@@ -3,7 +3,7 @@
 
         <mat-form-field class="input-name" appearance="fill">
             <mat-label>Nome completo</mat-label>
-            <input matInput formControlName="name">
+            <input matInput formControlName="name" pattern="[a-zA-Z0-9]+">
             <mat-hint>Preencha com seu nome completo</mat-hint>
         </mat-form-field>
 
@@ -15,7 +15,7 @@
 
         <mat-form-field class="input-cpf" appearance="fill">
             <mat-label>CPF</mat-label>
-            <input matInput type="number" formControlName="CPF">
+            <input matInput type="number" formControlName="CPF" placeholder="000.000.000-00">
             <mat-hint>Preencha com o seu CPF</mat-hint>
         </mat-form-field>
 
@@ -27,20 +27,25 @@
 
         <mat-form-field class="input-dateOfBirth" appearance="fill">
             <mat-label>Data de nascimento</mat-label>
-            <input matInput type="number" formControlName="dateOfBirth">
+            <input matInput type="date" formControlName="dateOfBirth">
             <mat-hint>Preencha com sua data de nascimento</mat-hint>
         </mat-form-field>
 
         <mat-form-field class="input-cep" appearance="fill">
             <mat-label>CEP</mat-label>
-            <input matInput type="number" formControlName="CEP">
+            <input matInput type="number" formControlName="CEP" placeholder="00000-000">
             <mat-hint>O CEP deve ter 9 dígitos</mat-hint>
         </mat-form-field>
 
         <mat-form-field class="input-telephone" appearance="fill">
             <mat-label>Celular</mat-label>
-            <input matInput type="number" formControlName="telephone">
+            <input matInput type="tel" formControlName="telephone" placeholder="(00) 00000-0000">
             <mat-hint>Preencha com seu celular</mat-hint>
         </mat-form-field>
+
+        <div class="buttons">
+            <app-button-back [routerLink]="''"></app-button-back>
+            <app-button-ahead [routerLink]="'imovel'"></app-button-ahead>
+        </div>
     </fieldset>
 </form>

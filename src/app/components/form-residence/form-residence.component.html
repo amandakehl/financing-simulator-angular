@@ -33,6 +33,9 @@
             <input matInput formControlName="installments">
             <mat-hint>Preencha com no máximo 360 parcelas</mat-hint>
         </mat-form-field>
-
+        <div class="buttons">
+            <app-button-back [routerLink]="''"></app-button-back>
+            <app-button-ahead [routerLink]="'imovel'"></app-button-ahead>
+        </div>
     </fieldset>
 </form>

@@ -26,6 +26,8 @@ import { ReprovedPageComponent } from './pages/reproved-page/reproved-page.compo
 import { CpfPipe } from './pipes/cpf.pipe';
 import { TelephonePipe } from './pipes/telephone.pipe';
 import { ButtonStartComponent } from './components/button-start/button-start.component';
+import { ButtonAheadComponent } from './components/button-ahead/button-ahead.component';
+import { ButtonBackComponent } from './components/button-back/button-back.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { ButtonStartComponent } from './components/button-start/button-start.com
     ReprovedPageComponent,
     CpfPipe,
     TelephonePipe,
-    ButtonStartComponent
+    ButtonStartComponent,
+    ButtonAheadComponent,
+    ButtonBackComponent
   ],
   imports: [
     BrowserModule,
