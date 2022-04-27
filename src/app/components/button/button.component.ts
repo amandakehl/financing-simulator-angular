@@ -1,11 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-button-ahead',
-  templateUrl: './button-ahead.component.html',
-  styleUrls: ['./button-ahead.component.scss']
+  selector: 'app-button',
+  templateUrl: './button.component.html',
+  styleUrls: ['./button.component.scss']
 })
-export class ButtonAheadComponent implements OnInit {
+export class ButtonComponent implements OnInit {
+  @Input() buttonLabel = ''
+  @Input() isPrimary = false;
 
   constructor() { }
 
@@ -18,6 +20,7 @@ export class ButtonAheadComponent implements OnInit {
     //   });
     //   this.formulario.reset()
     // }
+
   }
 
 }

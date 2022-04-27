@@ -2,54 +2,45 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { CpfPipe } from './pipes/cpf.pipe';
+import { TelephonePipe } from './pipes/telephone.pipe';
+
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
-import { HomeScreenComponent } from './pages/home-screen/home-screen.component';
-import { TitleComponent } from './core/title/title.component';
 import { BidderDataComponent } from './pages/bidder-data/bidder-data.component';
 import { FormBidderComponent } from './components/form-bidder/form-bidder.component';
 import { FormResidenceComponent } from './components/form-residence/form-residence.component';
 import { FirstInformationComponent } from './components/first-information/first-information.component';
-import { ImageSoVamuComponent } from './components/image-so-vamu/image-so-vamu.component';
 import { ResidenceDataComponent } from './pages/residence-data/residence-data.component';
-import { ApprovedPropositionComponent } from './components/approved-proposition/approved-proposition.component';
 import { ApprovedPageComponent } from './pages/approved-page/approved-page.component';
-import { ReprovedPropositionComponent } from './components/reproved-proposition/reproved-proposition.component';
 import { ReprovedPageComponent } from './pages/reproved-page/reproved-page.component';
-import { CpfPipe } from './pipes/cpf.pipe';
-import { TelephonePipe } from './pipes/telephone.pipe';
-import { ButtonStartComponent } from './components/button-start/button-start.component';
-import { ButtonAheadComponent } from './components/button-ahead/button-ahead.component';
-import { ButtonBackComponent } from './components/button-back/button-back.component';
+import { ButtonComponent } from './components/button/button.component';
+import { BasePageTemplateComponent } from './shared/base-page-template/base-page-template.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeScreenComponent,
-    TitleComponent,
     BidderDataComponent,
     FormBidderComponent,
     FormResidenceComponent,
     FirstInformationComponent,
-    ImageSoVamuComponent,
     ResidenceDataComponent,
-    ApprovedPropositionComponent,
     ApprovedPageComponent,
-    ReprovedPropositionComponent,
     ReprovedPageComponent,
+    ButtonComponent,
     CpfPipe,
     TelephonePipe,
-    ButtonStartComponent,
-    ButtonAheadComponent,
-    ButtonBackComponent
+    BasePageTemplateComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

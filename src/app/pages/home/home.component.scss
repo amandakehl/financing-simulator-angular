@@ -1,0 +1,14 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80vh;
+
+    img {
+        align-self: flex-end;
+    }
+}
+
+.so-vamu {
+    width: 35%;
+}

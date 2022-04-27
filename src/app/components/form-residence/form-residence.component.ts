@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form-residence',
@@ -15,16 +16,29 @@ export class FormResidenceComponent implements OnInit {
   ]
 
   constructor(
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
     this.formularioResidence = this.formBuilder.group({
-      monthlyIncome: [null],
-      residenceValue: [null],
-      entryValue: [null],
-      installments: [null]
+      monthlyIncome: [null, Validators.required],
+      residenceValue: [null, Validators.required],
+      entryValue: [null, Validators.required],
+      installments: [null, Validators.required]
     })
+  }
+
+  // calculate() {
+  //   const valorTotalAprovado = 
+  // }
+
+  simulate() {
+    if (true) {
+      this.router.navigate(['/aprovado'])
+    } else {
+      this.router.navigate(['reprovado'])
+    }
   }
 
 }

@@ -1,13 +1,7 @@
-mat-toolbar {
-    width: 100vw;
-}
+.container {
+    display: flex;
+    align-items: center;
 
-.header-image {
-    position: static;
-    width: 84.54px;
-    height: 50px;
-    left: 16px;
-    top: 10px;
 }
 
 .header-span {
@@ -20,6 +14,7 @@ mat-toolbar {
 @media screen and (max-width: 1124px) {
     mat-toolbar {
         display: flex;
+        flex-wrap: wrap;
     }
 
     .header-image {

@@ -1,11 +1,17 @@
-<div class="container">
-    <div class="header">
-        <app-header></app-header>
-    </div>
-    <div class="title">
-        <app-title></app-title>
-    </div>
+<app-base-page-template title="Reprovado">
     <div class="reproved">
-        <app-reproved-proposition></app-reproved-proposition>
+        <span class="proposition-count">Proposta Nº 00001</span>
+        <img class="reproved-image" src="../../../assets/images/reproved.png" aria-hidden="true">
+        <span class="reproved-status">STATUS: REPROVADO</span>
+        <span class="unfortunately-message">Infelizmente não foi possível aprovar seu financiamento. Não desanime,
+            reunimos
+            algumas dicas que podem ajudar na
+            sua próxima simulação:</span>
+        <ul class="list-reproved">
+            <li class="list-reproved-item">Mantenha seu CPF em dia e sem restrições;</li>
+            <li class="list-reproved-item">Dados de endereço, e-mail, telefone sempre atualizados;</li>
+            <li class="list-reproved-item">Melhore seu relacionamento com o banco, movimentando sua conta.</li>
+        </ul>
+        <app-button buttonTitle="IR PARA A TELA INICIAL" [routerLink]="''"></app-button>
     </div>
-</div>
+</app-base-page-template>
