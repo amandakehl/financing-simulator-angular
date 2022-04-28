@@ -1,0 +1,431 @@
+{
+  "bidders": [
+    {
+      "id": "number",
+      "name": "string",
+      "occupation": "string",
+      "CPF": "string",
+      "email": "string",
+      "dateOfBirth": "string",
+      "CEP": "string",
+      "telephone": "string"
+    },
+    {
+      "name": "Amanda",
+      "occupation": "Programadora",
+      "CPF": "12312312312",
+      "email": "amanda@email.com",
+      "dateOfBirth": "1997-06-02",
+      "CEP": "00000000",
+      "telephone": "00000000000",
+      "id": "lnnXFsj"
+    },
+    {
+      "name": "Eduarda",
+      "occupation": "Dentista",
+      "CPF": "00000000000",
+      "email": "eduarda@email.com",
+      "dateOfBirth": "1985-07-10",
+      "CEP": "00000000",
+      "telephone": "00000000000",
+      "id": "TPCPPC1"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "BnIZMMn"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "N9G7X2_"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "z_Fl_Ea"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "rV3lUg5"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "U29uWye"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "07sd4tp"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "du5glxs"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "gCGwvZN"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "oWTOg2n"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "pWgShhV"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "ieCczVR"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "BNzfCDd"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "bbZM9zF"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "fAa3h8d"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "tf64L19"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "d5EFwOJ"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "FVXyedb"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "IaDCdis"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "c0DuPfl"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "OpKO8IE"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "LTcTh_E"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "bR6R894"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "3itnGQo"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "wkR9Cqd"
+    },
+    {
+      "name": null,
+      "occupation": null,
+      "CPF": null,
+      "email": null,
+      "dateOfBirth": null,
+      "CEP": null,
+      "telephone": null,
+      "id": "nXJPliT"
+    },
+    {
+      "name": "asdas",
+      "occupation": "asdasd",
+      "CPF": "00000000000",
+      "email": "asdas@sad",
+      "dateOfBirth": "1997-06-02",
+      "CEP": "11111111",
+      "telephone": "11111111111",
+      "id": "ihmsuRC"
+    },
+    {
+      "name": "Aasda",
+      "occupation": "asdasd",
+      "CPF": "11111111111",
+      "email": "sdas@mm",
+      "dateOfBirth": "1997-06-02",
+      "CEP": "95032755",
+      "telephone": "54981330659",
+      "id": "AQjlKRN"
+    },
+    {
+      "name": "Aasda",
+      "occupation": "asdasd",
+      "CPF": "11111111111",
+      "email": "sdas@mm",
+      "dateOfBirth": "1997-06-02",
+      "CEP": "95032755",
+      "telephone": "54981330659",
+      "id": "1-9RN4M"
+    },
+    {
+      "name": "dssd",
+      "occupation": "dfsdf",
+      "CPF": "12345678901",
+      "email": "sdfsdf@asfasda",
+      "dateOfBirth": "1997-06-02",
+      "CEP": "00000000",
+      "telephone": "54981330659",
+      "id": "LHbNp-J"
+    },
+    {
+      "name": "ssss",
+      "occupation": "sss",
+      "CPF": "12345678901",
+      "email": "sdfsdf@asfasda",
+      "dateOfBirth": "1997-06-02",
+      "CEP": "00000000",
+      "telephone": "00000000000",
+      "id": "w-z90k-"
+    },
+    {
+      "name": "ssss",
+      "occupation": "sss",
+      "CPF": "12345678901",
+      "email": "sdfsdf@asfasda",
+      "dateOfBirth": "1997-06-02",
+      "CEP": "00000000",
+      "telephone": "00000000000",
+      "id": "JEdMfm8"
+    },
+    {
+      "name": "ssss",
+      "occupation": "sss",
+      "CPF": "12345678901",
+      "email": "sdfsdf@asfasda",
+      "dateOfBirth": "1997-06-02",
+      "CEP": "00000000",
+      "telephone": "00000000000",
+      "id": "DY1p3j7"
+    },
+    {
+      "name": "ssss",
+      "occupation": "sss",
+      "CPF": "12345678901",
+      "email": "sdfsdf@asfasda",
+      "dateOfBirth": "1997-06-02",
+      "CEP": "00000000",
+      "telephone": "00000000000",
+      "id": "ezZHz8d"
+    },
+    {
+      "name": "ssss",
+      "occupation": "sss",
+      "CPF": "12345678901",
+      "email": "sdfsdf@asfasda",
+      "dateOfBirth": "1997-06-02",
+      "CEP": "00000000",
+      "telephone": "00000000000",
+      "id": "qaW5uNn"
+    },
+    {
+      "name": "ssss",
+      "occupation": "sss",
+      "CPF": "12345678901",
+      "email": "sdfsdf@asfasda",
+      "dateOfBirth": "1997-06-02",
+      "CEP": "00000000",
+      "telephone": "00000000000",
+      "id": "hyRM0Xt"
+    },
+    {
+      "name": "ssss",
+      "occupation": "sss",
+      "CPF": "12345678901",
+      "email": "sdfsdf@asfasda",
+      "dateOfBirth": "1997-06-02",
+      "CEP": "00000000",
+      "telephone": "00000000000",
+      "id": "FSlcKZc"
+    }
+  ],
+  "residence": [
+    {
+      "id": "number",
+      "monthlyIncome": "number",
+      "residenceValue": "number",
+      "entryValue": "number",
+      "installments": "number"
+    },
+    {
+      "monthlyIncome": "1200",
+      "residenceValue": "200000",
+      "entryValue": "35000",
+      "installments": "30",
+      "id": "wKmKFUJ"
+    },
+    {
+      "monthlyIncome": null,
+      "residenceValue": null,
+      "entryValue": null,
+      "installments": null,
+      "id": "kDW8PtG"
+    },
+    {
+      "monthlyIncome": null,
+      "residenceValue": null,
+      "entryValue": null,
+      "installments": null,
+      "id": "gd4PGaV"
+    },
+    {
+      "monthlyIncome": null,
+      "residenceValue": null,
+      "entryValue": null,
+      "installments": null,
+      "id": "LwG-IhN"
+    }
+  ]
+}

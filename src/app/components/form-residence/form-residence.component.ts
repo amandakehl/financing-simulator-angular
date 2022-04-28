@@ -1,5 +1,8 @@
+import { FormResidenceService } from './../../services/residence/form-residence.service';
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormResidenceModel } from 'src/app/models/residence.model';
 import { Router } from '@angular/router';
 
 @Component({
@@ -14,9 +17,12 @@ export class FormResidenceComponent implements OnInit {
     { value: 'apartment', viewValue: 'Apartamento' },
     { value: 'loft', viewValue: 'Sobrado' }
   ]
+  info: FormResidenceModel = new FormResidenceModel();
 
   constructor(
     private formBuilder: FormBuilder,
+    private http: HttpClient,
+    private FormResidenceService: FormResidenceService,
     private router: Router
   ) { }
 
@@ -29,9 +35,13 @@ export class FormResidenceComponent implements OnInit {
     })
   }
 
-  // calculate() {
-  //   const valorTotalAprovado = 
-  // }
+  calculate() {
+    this.FormResidenceService.saveInfosResidence(this.formularioResidence.value).subscribe(info => {
+      this.info = new FormResidenceModel();
+    }, err => {
+      console.log('Erro ao salvar', err)
+    });
+  }
 
   simulate() {
     if (true) {

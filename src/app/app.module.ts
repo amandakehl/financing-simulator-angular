@@ -1,6 +1,9 @@
+import { FormResidenceService } from './services/residence/form-residence.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { CpfPipe } from './pipes/cpf.pipe';
 import { TelephonePipe } from './pipes/telephone.pipe';
@@ -25,6 +28,9 @@ import { ButtonComponent } from './components/button/button.component';
 import { BasePageTemplateComponent } from './shared/base-page-template/base-page-template.component';
 import { HomeComponent } from './pages/home/home.component';
 
+import { FormBidderService } from './services/bidder/form-bidder.service';
+import { ErrorComponent } from './pages/error/error.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +46,8 @@ import { HomeComponent } from './pages/home/home.component';
     CpfPipe,
     TelephonePipe,
     BasePageTemplateComponent,
-    HomeComponent
+    HomeComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
@@ -50,9 +57,13 @@ import { HomeComponent } from './pages/home/home.component';
     MatInputModule,
     ReactiveFormsModule,
     MatSelectModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    FormBidderService,
+    FormResidenceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -38,13 +38,8 @@
     letter-spacing: 0.15px;
     color: var(--red);
     margin: 10px;
-}
-
-.reproved::after {
-    content: "";
-    display: block;
+    padding: 0 20% 2% 20%;
     border-bottom: 1px solid var(--gray);
-    margin-top: 1.5rem;
 }
 
 .unfortunately-message {

@@ -35,8 +35,8 @@
             <mat-hint>Preencha com no máximo 360 parcelas</mat-hint>
         </mat-form-field>
         <div class="buttons">
-            <app-button buttonLabel="VOLTAR"></app-button>
-            <app-button buttonLabel="SIMULAR" [isPrimary]="true" (click)="simulate()"></app-button>
+            <app-button buttonLabel="VOLTAR" [routerLink]="'/proponente'"></app-button>
+            <app-button buttonLabel="SIMULAR" [isPrimary]="true" (click)="calculate()"></app-button>
         </div>
     </fieldset>
 </form>

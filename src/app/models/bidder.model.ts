@@ -1,4 +1,5 @@
 export class FormBidderModel {
+    id: number = 0;
     name: string = '';
     occupation: string = '';
     CPF: string = '';
