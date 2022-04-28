@@ -1,11 +1,9 @@
-interface IBidder {
-    name: string,
-    occupation: string,
-    CPF: number,
-    email: string,
-    dateOfBirth: number,
-    CEP: number,
-    telephone: number
+export class FormBidderModel {
+    name: string = '';
+    occupation: string = '';
+    CPF: string = '';
+    email: string = '';
+    dateOfBirth: string = '';
+    CEP: string = '';
+    telephone: string = '';
 }
-
-export default IBidder
