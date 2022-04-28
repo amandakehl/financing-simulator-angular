@@ -7,11 +7,11 @@
 }
 
 mat-form-field {
-    margin: 0 30px 20px 0;
+    margin: 10px;
 }
 
 ::ng-deep mat-form-field {
-    width: 440px !important;
+    width: 30%;
 }
 
 .form-fielset::after {
@@ -26,8 +26,16 @@ mat-form-field {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1124px) {
+@media screen and (max-width: 640px) {
     .form {
+        width: 100%;
+    }
+
+    mat-form-field {
+        margin: 0 0 10px 0;
+    }
+
+    ::ng-deep mat-form-field {
         width: 100%;
     }
 }

@@ -6,3 +6,9 @@
 .title-principal {
     margin-top: 20px;
 }
+
+@media screen and (max-width: 1224px) {
+    .title-principal {
+        margin-left: 20px;
+    }
+}
