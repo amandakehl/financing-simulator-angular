@@ -9,19 +9,22 @@ import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms'
 export class FormBidderComponent implements OnInit {
   formularioBidder!: FormGroup;
 
+  private caracteres = '^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]*$'
+  private numbers = '^[0-9]*$'
+
   constructor(
     private formBuilder: FormBuilder
   ) { }
 
   ngOnInit(): void {
     this.formularioBidder = this.formBuilder.group({
-      name: [null, [Validators.minLength(3), Validators.required]],
+      name: [null, [Validators.minLength(3), Validators.pattern(this.caracteres), Validators.required]],
       occupation: [null, Validators.required],
-      CPF: [null, [Validators.minLength(11), Validators.required]],
+      CPF: [null, [Validators.minLength(11), Validators.maxLength(11), Validators.pattern(this.numbers), Validators.required]],
       email: [null, [Validators.email, Validators.required]],
       dateOfBirth: [null, Validators.required],
-      CEP: [null, Validators.required],
-      telephone: [null, Validators.required]
+      CEP: [null, [Validators.minLength(8), Validators.maxLength(8), Validators.pattern(this.numbers), Validators.required]],
+      telephone: [null, [Validators.minLength(11), Validators.maxLength(11), Validators.pattern(this.numbers), Validators.required]],
     })
 
     // onContinue() {
@@ -33,5 +36,4 @@ export class FormBidderComponent implements OnInit {
     //   this.formulario.reset()
     // }
   }
-
 }
