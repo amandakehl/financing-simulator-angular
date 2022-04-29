@@ -27,6 +27,7 @@ export class FormResidenceComponent implements OnInit {
 
   ngOnInit(): void {
     if (this.formResidenceService.hasAnyValue()) {
+      console.log(this.formResidenceService.hasAnyValue())
       const residenceInformation = this.formResidenceService.getResidence();
       this.formularioResidence = this.formBuilder.group({
         typeResidence: [residenceInformation.typeResidence, Validators.required],
@@ -62,21 +63,21 @@ export class FormResidenceComponent implements OnInit {
 
   goToResult() {
     let newResidence: FormResidenceModel = this.formularioResidence.value;
-    this.formResidenceService.setResidence(newResidence)
+    this.formResidenceService.setResidence(newResidence);
     this.approvedService.addOrderNumber();
 
     if (this.approvedProposal()) {
-      this.calcularFirstInstallment()
+      this.calculateFirstInstallment()
       this.router.navigate(['/aprovado'])
     } else {
       this.router.navigate(['/reprovado'])
     }
   }
 
-  calcularFirstInstallment() {
+  calculateFirstInstallment() {
     const totalValue = this.approvedService.getValueTotal();
-    const totalInstallments = this.formularioResidence.get('installments')?.value
-    const firtsInstallment = (totalValue * ((100 + (8 / 10 * (totalInstallments / 12))) / 100) / totalInstallments)
+    const totalInstallments = this.formularioResidence.get('installments')?.value;
+    const firtsInstallment = (totalValue * ((100 + (8 / 10 * (totalInstallments / 12))) / 100) / totalInstallments);
 
     this.approvedService.setValueFirstInstallment(firtsInstallment)
   }

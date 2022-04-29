@@ -20,7 +20,10 @@ export class ApprovedPageComponent implements OnInit {
     private formBidderService: FormBidderService,
     private formResidenceService: FormResidenceService,
     private router: Router
-  ) { }
+  ) {
+    if (!this.formBidderService.hasAnyContent())
+      this.router.navigate([''])
+  }
 
   ngOnInit(): void {
     this.firtsInstallment = this.approvedService.getValueFirstInstallment();

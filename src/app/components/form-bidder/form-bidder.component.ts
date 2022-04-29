@@ -13,14 +13,13 @@ import { Router } from '@angular/router';
 export class FormBidderComponent implements OnInit {
   formularioBidder!: FormGroup;
 
-  private caracteres = '^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]*$'
+  private caracteres = '^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]*$'
   private numbers = '^[0-9-.()]*$'
 
   constructor(
     private formBuilder: FormBuilder,
     private formBidderService: FormBidderService,
     private router: Router,
-    //private bidderStorage: FormBidderStorageService
   ) { }
 
   ngOnInit(): void {
@@ -29,21 +28,21 @@ export class FormBidderComponent implements OnInit {
       this.formularioBidder = this.formBuilder.group({
         name: [bidderInformation.name, [Validators.minLength(3), Validators.pattern(this.caracteres), Validators.required]],
         occupation: [bidderInformation.occupation, Validators.required],
-        CPF: [bidderInformation.CPF, [Validators.minLength(11), Validators.maxLength(14), Validators.pattern(this.numbers), Validators.required]],
+        CPF: [bidderInformation.CPF, [Validators.pattern(this.numbers), Validators.required]],
         email: [bidderInformation.email, [Validators.email, Validators.required]],
         dateOfBirth: [bidderInformation.dateOfBirth, Validators.required],
-        CEP: [bidderInformation.CEP, [Validators.minLength(8), Validators.maxLength(9), Validators.pattern(this.numbers), Validators.required]],
-        telephone: [bidderInformation.telephone, [Validators.minLength(11), Validators.maxLength(14), Validators.pattern(this.numbers), Validators.required]],
+        CEP: [bidderInformation.CEP, [Validators.pattern(this.numbers), Validators.required]],
+        telephone: [bidderInformation.telephone, [Validators.pattern(this.numbers), Validators.required]],
       })
     } else {
       this.formularioBidder = this.formBuilder.group({
         name: [null, [Validators.minLength(3), Validators.pattern(this.caracteres), Validators.required]],
         occupation: [null, Validators.required],
-        CPF: [null, [Validators.minLength(11), Validators.maxLength(14), Validators.pattern(this.numbers), Validators.required]],
+        CPF: [null, [Validators.pattern(this.numbers), Validators.required]],
         email: [null, [Validators.email, Validators.required]],
         dateOfBirth: [null, Validators.required],
-        CEP: [null, [Validators.minLength(8), Validators.maxLength(9), Validators.pattern(this.numbers), Validators.required]],
-        telephone: [null, [Validators.minLength(11), Validators.maxLength(14), Validators.pattern(this.numbers), Validators.required]],
+        CEP: [null, [Validators.pattern(this.numbers), Validators.required]],
+        telephone: [null, [Validators.pattern(this.numbers), Validators.required]],
       })
     }
   }
@@ -63,6 +62,6 @@ export class FormBidderComponent implements OnInit {
   }
 
   backToHome() {
-    this.router.navigate(['/erro'])
+    return alert('Preencha todos os campos corretamente!')
   }
 }
