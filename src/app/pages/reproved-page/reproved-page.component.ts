@@ -10,6 +10,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./reproved-page.component.scss']
 })
 export class ReprovedPageComponent implements OnInit {
+  firtsInstallment = 0;
+  valueTotal = 0;
+  orderNumber = 0;
 
   constructor(
     private approvedService: ApprovedService,
@@ -22,6 +25,9 @@ export class ReprovedPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.firtsInstallment = this.approvedService.getValueFirstInstallment();
+    this.valueTotal = this.approvedService.getValueTotal();
+    this.orderNumber = this.approvedService.getOrderNumber();
   }
 
   onClick() {

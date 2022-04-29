@@ -48,9 +48,8 @@ export class FormResidenceComponent implements OnInit {
   }
 
   validation() {
-    console.log(this.formularioResidence)
     if (this.formularioResidence.valid && this.isValid()) {
-      this.goToResult()
+      return this.goToResult()
     } else {
       this.errorAlert();
     }
@@ -97,6 +96,6 @@ export class FormResidenceComponent implements OnInit {
   }
 
   errorAlert() {
-    return alert('Preencha todos os campos corretamente!')
+    return alert('Verifique se os campos estão preenchidos corretamente! Se sim, lembre-se que o máximo de parcelas permitido são 360x e o valor de entrada deve ser no mínimo 20% do valor do imóvel.')
   }
 }
