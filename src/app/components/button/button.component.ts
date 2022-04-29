@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FormBidderService } from 'src/app/services/bidder/form-bidder.service';
 
 @Component({
   selector: 'app-button',
@@ -9,18 +10,13 @@ export class ButtonComponent implements OnInit {
   @Input() buttonLabel = ''
   @Input() isPrimary = false;
 
-  constructor() { }
+  constructor(
+    private formBidderService: FormBidderService
+  ) { }
 
   ngOnInit(): void {
-    // onContinue() {
-    //   this.FormService.saveInfos(this.formulario.value).subscribe(info => {
-    //     this.info = new FormModel();
-    //   }, err => {
-    //     console.log('Erro ao salvar', err)
-    //   });
-    //   this.formulario.reset()
-    // }
-
+    // const bidderInformation = this.formBidderService.getBidder();
+    // if (bidderInformation)
   }
 
 }

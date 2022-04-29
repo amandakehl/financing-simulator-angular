@@ -1,3 +1,4 @@
+import { FormBidderService } from './../../services/bidder/form-bidder.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BidderDataComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private FormBidderService: FormBidderService
+  ) { }
 
   ngOnInit(): void {
   }

@@ -1,6 +1,10 @@
 .base-page {
-    background-color: var(--gray);
     width: 100%;
+}
+
+.background {
+    background-color: var(--gray);
+    height: 100vh;
 }
 
 .title-principal {

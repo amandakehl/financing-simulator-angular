@@ -15,7 +15,7 @@
 
         <mat-form-field class="input-cpf" appearance="fill">
             <mat-label>CPF</mat-label>
-            <input matInput formControlName="CPF" placeholder="000.000.000-00">
+            <input matInput formControlName="CPF" placeholder="000.000.000-00" [imask]="{mask: '000.000.000-00'}">
             <mat-hint>Preencha com o seu CPF</mat-hint>
         </mat-form-field>
 
@@ -33,13 +33,14 @@
 
         <mat-form-field class="input-cep" appearance="fill">
             <mat-label>CEP</mat-label>
-            <input matInput formControlName="CEP" placeholder="00000-000">
+            <input matInput formControlName="CEP" placeholder="00000-000" [imask]="{mask: '00000-000'}">
             <mat-hint>O CEP deve ter 8 dígitos</mat-hint>
         </mat-form-field>
 
         <mat-form-field class="input-telephone" appearance="fill">
             <mat-label>Celular</mat-label>
-            <input matInput type="tel" formControlName="telephone" placeholder="(00) 00000-0000">
+            <input matInput type="tel" formControlName="telephone" placeholder="(00)00000-0000"
+                [imask]="{mask: '(00)00000-0000'}">
             <mat-hint>Preencha com seu celular</mat-hint>
         </mat-form-field>
 
@@ -50,7 +51,8 @@
 
         <div class="buttons">
             <app-button buttonLabel="CANCELAR" [routerLink]="''"></app-button>
-            <app-button buttonLabel="CONTINUAR" [isPrimary]="true" (click)="validation(); getInfosBidder()">
+            <app-button buttonLabel="CONTINUAR" [isPrimary]="true" (click)="validation()"
+                (disabled)="!this.formularioBidder.valid">
             </app-button>
         </div>
     </fieldset>

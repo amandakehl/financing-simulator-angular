@@ -3,10 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-
-import { CpfPipe } from './pipes/cpf.pipe';
-import { TelephonePipe } from './pipes/telephone.pipe';
+import { IMaskModule } from 'angular-imask';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -43,8 +40,6 @@ import { ErrorComponent } from './pages/error/error.component';
     ApprovedPageComponent,
     ReprovedPageComponent,
     ButtonComponent,
-    CpfPipe,
-    TelephonePipe,
     BasePageTemplateComponent,
     HomeComponent,
     ErrorComponent
@@ -59,7 +54,7 @@ import { ErrorComponent } from './pages/error/error.component';
     MatSelectModule,
     MatButtonModule,
     FormsModule,
-    HttpClientModule
+    IMaskModule
   ],
   providers: [
     FormBidderService,

@@ -3,7 +3,7 @@
 
         <mat-form-field appearance="fill">
             <mat-label>Tipo do imóvel</mat-label>
-            <mat-select name="residence">
+            <mat-select name="residence" formControlName="typeResidence">
                 <mat-option *ngFor="let residence of residences" [value]="residence.value">
                     {{residence.viewValue}}
                 </mat-option>
@@ -36,7 +36,7 @@
         </mat-form-field>
         <div class="buttons">
             <app-button buttonLabel="VOLTAR" [routerLink]="'/proponente'"></app-button>
-            <app-button buttonLabel="SIMULAR" [isPrimary]="true" (click)="calculate()"></app-button>
+            <app-button buttonLabel="SIMULAR" [isPrimary]="true" (click)="validation()"></app-button>
         </div>
     </fieldset>
 </form>

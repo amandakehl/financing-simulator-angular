@@ -1,10 +1,10 @@
-export class FormBidderModel {
-    id: number = 0;
-    name: string = '';
-    occupation: string = '';
-    CPF: string = '';
-    email: string = '';
-    dateOfBirth: string = '';
-    CEP: string = '';
-    telephone: string = '';
+export interface FormBidderModel {
+    id: number,
+    name: string,
+    occupation: string,
+    CPF: string,
+    email: string,
+    dateOfBirth: string,
+    CEP: string,
+    telephone: string,
 }

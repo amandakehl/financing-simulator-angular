@@ -1,21 +1,46 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 import { FormBidderModel } from 'src/app/models/bidder.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FormBidderService {
-
-
-  constructor(private http: HttpClient) { }
-
-  saveInfosBidder(info: FormBidderModel): Observable<any> {
-    return this.http.post("http://localhost:3000/bidders", info)
+  private bidder: FormBidderModel = {
+    id: 0,
+    name: '',
+    occupation: '',
+    CPF: '',
+    email: '',
+    dateOfBirth: '',
+    CEP: '',
+    telephone: ''
   }
 
-  getInfosBidder(info: FormBidderModel): Observable<any> {
-    return this.http.get<FormBidderModel[]>("http://localhost:3000/bidders")
+  constructor() { }
+
+  getBidder() {
+    return this.bidder;
+  }
+
+  setBidder(newBidder: FormBidderModel) {
+    this.bidder = newBidder;
+  }
+
+  hasAnyContent() {
+    return this.bidder.id !== 0 && this.bidder.name !== '' && this.bidder.occupation !== '' && this.bidder.CPF !== '' && this.bidder.email !== ''
+      && this.bidder.dateOfBirth !== '' && this.bidder.CEP !== '' && this.bidder.telephone !== ''
+  }
+
+  clearStorage() {
+    this.bidder = {
+      id: 0,
+      name: '',
+      occupation: '',
+      CPF: '',
+      email: '',
+      dateOfBirth: '',
+      CEP: '',
+      telephone: ''
+    }
   }
 }
