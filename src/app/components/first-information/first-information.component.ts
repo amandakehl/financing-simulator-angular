@@ -11,6 +11,4 @@ export class FirstInformationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  minhaLabel = 'asasa'
 }

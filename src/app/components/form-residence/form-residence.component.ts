@@ -52,7 +52,7 @@ export class FormResidenceComponent implements OnInit {
     if (this.formularioResidence.valid && this.isValid()) {
       this.goToResult()
     } else {
-      this.backToHome();
+      this.errorAlert();
     }
   }
 
@@ -77,7 +77,7 @@ export class FormResidenceComponent implements OnInit {
   calculateFirstInstallment() {
     const totalValue = this.approvedService.getValueTotal();
     const totalInstallments = this.formularioResidence.get('installments')?.value;
-    const firtsInstallment = (totalValue * ((100 + (8 / 10 * (totalInstallments / 12))) / 100) / totalInstallments);
+    const firtsInstallment = (totalValue * ((100 + (8 * (totalInstallments / 12))) / 100) / totalInstallments);
 
     this.approvedService.setValueFirstInstallment(firtsInstallment)
   }
@@ -96,7 +96,7 @@ export class FormResidenceComponent implements OnInit {
     return totalValueByInstallments <= monthlyIncome30Percent
   }
 
-  backToHome() {
-    this.router.navigate(['/erro'])
+  errorAlert() {
+    return alert('Preencha todos os campos corretamente!')
   }
 }

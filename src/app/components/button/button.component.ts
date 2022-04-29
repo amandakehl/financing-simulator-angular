@@ -15,8 +15,6 @@ export class ButtonComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // const bidderInformation = this.formBidderService.getBidder();
-    // if (bidderInformation)
   }
 
 }

@@ -1,5 +1,3 @@
-import { ErrorComponent } from './pages/error/error.component';
-
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -14,8 +12,7 @@ const routes: Routes = [
   { path: 'proponente', component: BidderDataComponent },
   { path: 'imovel', component: ResidenceDataComponent },
   { path: 'aprovado', component: ApprovedPageComponent },
-  { path: 'reprovado', component: ReprovedPageComponent },
-  { path: 'erro', component: ErrorComponent }
+  { path: 'reprovado', component: ReprovedPageComponent }
 ];
 
 @NgModule({

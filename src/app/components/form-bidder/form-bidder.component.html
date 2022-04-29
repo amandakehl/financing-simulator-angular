@@ -45,14 +45,9 @@
         </mat-form-field>
 
         <div class="buttons">
-            <app-button-back [routerLink]="''"></app-button-back>
-            <app-button-ahead [routerLink]="'imovel'"></app-button-ahead>
-        </div>
-
-        <div class="buttons">
-            <app-button buttonLabel="CANCELAR" [routerLink]="''"></app-button>
-            <app-button buttonLabel="CONTINUAR" [isPrimary]="true" (click)="validation()"
-                (disabled)="!this.formularioBidder.valid">
+            <app-button buttonLabel="CANCELAR" role="button" aria-label="Cancelar" [routerLink]="''"></app-button>
+            <app-button buttonLabel="CONTINUAR" [isPrimary]="true" role="button" aria-label="Continuar"
+                (click)="validation()">
             </app-button>
         </div>
     </fieldset>

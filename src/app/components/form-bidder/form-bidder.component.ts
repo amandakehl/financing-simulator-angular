@@ -1,4 +1,3 @@
-import { FormBidderStorageService } from './../../services/bidder/form-bidder-storage.service';
 import { FormBidderService } from './../../services/bidder/form-bidder.service';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
@@ -51,7 +50,7 @@ export class FormBidderComponent implements OnInit {
     if (this.formularioBidder.valid) {
       this.onContinue()
     } else {
-      this.backToHome();
+      this.errorAlert();
     }
   }
 
@@ -61,7 +60,7 @@ export class FormBidderComponent implements OnInit {
     this.router.navigate(['/imovel'])
   }
 
-  backToHome() {
+  errorAlert() {
     return alert('Preencha todos os campos corretamente!')
   }
 }

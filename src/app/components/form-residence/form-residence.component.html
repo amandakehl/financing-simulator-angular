@@ -34,9 +34,12 @@
             <input matInput formControlName="installments">
             <mat-hint>Preencha com no máximo 360 parcelas</mat-hint>
         </mat-form-field>
+
         <div class="buttons">
-            <app-button buttonLabel="VOLTAR" [routerLink]="'/proponente'"></app-button>
-            <app-button buttonLabel="SIMULAR" [isPrimary]="true" (click)="validation()"></app-button>
+            <app-button buttonLabel="VOLTAR" role="button" aria-label="Voltar" [routerLink]="'/proponente'">
+            </app-button>
+            <app-button buttonLabel="SIMULAR" [isPrimary]="true" role="button" aria-label="Simular"
+                (click)="validation()"></app-button>
         </div>
     </fieldset>
 </form>

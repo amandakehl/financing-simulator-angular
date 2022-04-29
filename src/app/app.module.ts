@@ -1,16 +1,15 @@
-import { FormResidenceService } from './services/residence/form-residence.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
 import { IMaskModule } from 'angular-imask';
 
-import { ReactiveFormsModule } from '@angular/forms';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
-import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
@@ -26,7 +25,7 @@ import { BasePageTemplateComponent } from './shared/base-page-template/base-page
 import { HomeComponent } from './pages/home/home.component';
 
 import { FormBidderService } from './services/bidder/form-bidder.service';
-import { ErrorComponent } from './pages/error/error.component';
+import { FormResidenceService } from './services/residence/form-residence.service';
 
 @NgModule({
   declarations: [
@@ -41,8 +40,7 @@ import { ErrorComponent } from './pages/error/error.component';
     ReprovedPageComponent,
     ButtonComponent,
     BasePageTemplateComponent,
-    HomeComponent,
-    ErrorComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
