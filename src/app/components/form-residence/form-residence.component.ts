@@ -98,4 +98,10 @@ export class FormResidenceComponent implements OnInit {
   errorAlert() {
     return alert('Verifique se os campos estão preenchidos corretamente! Se sim, lembre-se que o máximo de parcelas permitido são 360x e o valor de entrada deve ser no mínimo 20% do valor do imóvel.')
   }
+
+  onGoingBack() {
+    let newResidence: FormResidenceModel = this.formularioResidence.value;
+    this.formResidenceService.setResidence(newResidence);
+    this.router.navigate(['/proponente'])
+  }
 }
