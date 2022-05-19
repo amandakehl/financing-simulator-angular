@@ -8,9 +8,9 @@ describe('BidderDataComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BidderDataComponent ]
+      declarations: [BidderDataComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

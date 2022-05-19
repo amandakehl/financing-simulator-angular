@@ -1,3 +1,4 @@
+import { RouterTestingModule } from '@angular/router/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ReprovedPageComponent } from './reproved-page.component';
@@ -8,9 +9,10 @@ describe('ReprovedPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ReprovedPageComponent ]
+      imports: [RouterTestingModule],
+      declarations: [ReprovedPageComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
