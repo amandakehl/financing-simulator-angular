@@ -27,7 +27,6 @@ export class FormResidenceComponent implements OnInit {
 
   ngOnInit(): void {
     if (this.formResidenceService.hasAnyValue()) {
-      console.log(this.formResidenceService.hasAnyValue())
       const residenceInformation = this.formResidenceService.getResidence();
       this.formularioResidence = this.formBuilder.group({
         typeResidence: [residenceInformation.typeResidence, Validators.required],

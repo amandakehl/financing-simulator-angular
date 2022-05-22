@@ -24,4 +24,10 @@ describe('ApprovedPageComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should call functions on click', () => {
+    const click = spyOn((component), 'onClick').and.callThrough();
+    component.onClick();
+    expect(click).toHaveBeenCalled();
+  });
 });
