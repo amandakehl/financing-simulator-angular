@@ -1,27 +1,44 @@
-# FinancingSimulatorAngular
+# **Simulador de Financiamento | Trilha Angular - Front-end** 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+## **Sobre o projeto**
+Dentro da [trilha de conhecimentos](https://github.com/amandakehl/trilhaFrontEnd) sobre o framework Angular, esse projeto serve para fixar os assuntos e colocá-los em prática. 
 
-## Development server
+<br />
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## **Tabela de conteúdo**
+<!--ts-->
+   * [Sobre o projeto](#sobre-o-projeto)
+   * [Como baixar o projeto](#como-baixar-o-projeto)
+   * [Autora](#autora)
+<!--te-->
 
-## Code scaffolding
+<br />
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## **Como baixar o projeto**
 
-## Build
+```bash
+    # Para clonar o repositório 
+    $ git clone https://github.com/amandakehl/financing-simulator-angular
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+    # Entrar no diretório 
+    $ cd financing-simulator-angular
 
-## Running unit tests
+    # Instalar as dependências 
+    $ npm install 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    # Iniciar o projeto 
+    $ npm start
+```
 
-## Running end-to-end tests
+<br />
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## **Autora**
 
-## Further help
+<a href="https://github.com/amandakehl">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/73315527?v=4" width="100px;" alt=""/>
+</a>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Feito com 💙 por Amanda Kehl de Farias!
+
+  [<img src="https://img.shields.io/badge/Gmail-45BF86?style=for-the-badge&logo=gmail&logoColor=white">](mailto:amandakehldefarias@gmail.com) 
+  [<img src="https://img.shields.io/badge/LinkedIn-45BF86?style=for-the-badge&logo=linkedin&logoColor=white">](https://www.linkedin.com/in/amandakehl/) 
